@@ -1,0 +1,14 @@
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/AdminLteApplication.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/config/InitialDataConfig.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/config/JwtConfig.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/controller/AuthController.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/controller/CalendarController.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/controller/DashboardController.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/controller/IndexController.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/model/User.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/repository/UserRepository.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/security/CustomUserDetailsService.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/security/JwtAuthenticationFilter.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/security/JwtService.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/security/SecurityConfig.java
+/home/ek/workspace/windsurf/spring-boot-thymeleaf-adminlte-basic/src/main/java/com/example/adminlte/service/AuthenticationService.java
