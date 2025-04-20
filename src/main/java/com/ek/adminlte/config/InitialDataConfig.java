@@ -30,6 +30,22 @@ public class InitialDataConfig {
                 userRepository.save(adminUser);
                 System.out.println("Admin user created successfully");
             }
+
+            // Create 100 dummy users if they don't exist
+            for (int i = 1; i <= 100; i++) {
+                String username = "user" + i;
+                String email = "user" + i + "@example.com";
+                if (userRepository.findByUsername(username).isEmpty()) {
+                    User dummyUser = new User();
+                    dummyUser.setUsername(username);
+                    dummyUser.setPassword(passwordEncoder.encode("password"));
+                    dummyUser.setEmail(email);
+                    dummyUser.setRole("USER");
+                    dummyUser.setEnabled(true);
+                    userRepository.save(dummyUser);
+                }
+            }
+            System.out.println("100 dummy users created or already exist.");
         };
     }
 }

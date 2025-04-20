@@ -13,7 +13,6 @@ import lombok.Data;
 @Table(name = "users")
 @Data
 public class User {
-    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -22,6 +21,7 @@ public class User {
     private String username;
     
     @NotBlank
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private String password;
     
     @NotBlank
@@ -31,4 +31,16 @@ public class User {
     private String fullName;
     private String role;
     private boolean enabled = true;
+
+    // For DataTables compatibility: return roles as a list of objects
+    @com.fasterxml.jackson.annotation.JsonProperty("roles")
+    public java.util.List<java.util.Map<String, String>> getRolesList() {
+        java.util.List<java.util.Map<String, String>> rolesList = new java.util.ArrayList<>();
+        if (role != null) {
+            java.util.Map<String, String> roleMap = new java.util.HashMap<>();
+            roleMap.put("name", role);
+            rolesList.add(roleMap);
+        }
+        return rolesList;
+    }
 }

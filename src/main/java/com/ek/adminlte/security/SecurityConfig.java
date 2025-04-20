@@ -57,6 +57,7 @@ public class SecurityConfig {
                 .requestMatchers("/css/**", "/js/**", "/img/**", "/plugins/**", "/dist/**", "/webjars/**", "/favicon.ico").permitAll()
                 .requestMatchers("/error").permitAll()
                 .requestMatchers("/plugins/fontawesome-free/**", "/plugins/icheck-bootstrap/**", "/plugins/bootstrap/**", "/plugins/jquery/**").permitAll()
+                .requestMatchers("/admin/users/**").hasRole("ADMIN")
                 .anyRequest().authenticated()
             )
             .formLogin(form -> form
